@@ -21,6 +21,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'boxr'
 
+gem 'rack-cors'
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'pry'
