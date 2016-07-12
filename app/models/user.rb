@@ -1,6 +1,14 @@
 class User
-  def files
-    client.folder_items(shared_root.id, fields: [:tags, :name, :content_modified_at, :shared_link, :description]).map do |file|
+  def directories
+    files(shared_root.id).map { |tree| Directory.new tree }.sort
+  end
+
+  def directory(id)
+    files id
+  end
+
+  def files(root_id)
+    client.folder_items(root_id, fields: [:tags, :name, :content_modified_at, :shared_link, :description]).map do |file|
       expand_folder file
     end
   end
