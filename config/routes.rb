@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  match 'events', to: 'events#create', via: :all
+
   resources :directories, only: [:index, :show] do
     member do
       get 'files'
