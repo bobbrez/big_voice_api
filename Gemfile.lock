@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/TeamRubicon/boxr.git
+  revision: dd4c3ddb62e3f4a8f46f4c13afecea84dd917ed7
+  branch: bobbrez/add-metadata-template-actions
+  specs:
+    boxr (1.2.0)
+      addressable (~> 2.3)
+      hashie (~> 3.3)
+      httpclient (~> 2.5)
+      jwt (~> 1.4)
+      oj (~> 2.11)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,12 +52,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.0.0)
-    boxr (1.1.0)
-      addressable (~> 2.3)
-      hashie (~> 3.3)
-      httpclient (~> 2.5)
-      jwt (~> 1.4)
-      oj (~> 2.11)
     builder (3.2.2)
     byebug (9.0.5)
     coderay (1.1.1)
@@ -68,7 +74,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.4)
-    httpclient (2.8.0)
+    httpclient (2.8.1)
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -96,7 +102,7 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    oj (2.15.1)
+    oj (2.17.1)
     pg (0.18.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -175,7 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  boxr
+  boxr!
   coffee-rails (~> 4.1.0)
   dotenv-rails
   jbuilder (~> 2.0)

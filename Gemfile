@@ -19,7 +19,8 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-gem 'boxr'
+gem 'boxr', github: 'TeamRubicon/boxr', branch: 'bobbrez/add-metadata-template-actions'
+#gem 'boxr', path: '../boxr'
 
 gem 'rack-cors'
 
